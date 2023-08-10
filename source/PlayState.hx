@@ -13,7 +13,7 @@ class PlayState extends FlxState
 	var volume:Float = 1;
 	override public function create()
 	{
-        super.create();
+		super.create();
 
 		FlxG.sound.volume = volume;
 		FlxG.sound.muted = false;
@@ -25,6 +25,6 @@ class PlayState extends FlxState
 
 	function playjumpscaresound()
 	{
-		    FlxG.sound.play("assets/jumpscare.ogg");
+		FlxG.sound.play("assets/jumpscare-fixed.ogg");
 	}
 }
